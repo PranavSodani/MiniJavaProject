@@ -1,0 +1,69 @@
+import java.util.*;
+class UserSelection
+{
+    public int messageForCustomerSelection()
+    {
+        System.out.println("Please enter the above mentioned index of your favourable section");
+
+        // for taking choice
+        Byte userSelectedIndex;   
+        Scanner sc =new Scanner(System.in);
+        userSelectedIndex = sc.nextByte();
+        
+    }
+
+}
+class grocerySection extends UserSelection
+{
+    public void groceryList()
+    {
+        List <String> groceryItemList=new ArrayList<>();
+        groceryItemList.add("1} Cereals");
+        groceryItemList.add("2} Snacks");
+        groceryItemList.add("3} CookingIngredients");
+       byte groceryCategorySelectedNumber = messageForCustomerSelection();
+   
+    }
+}
+
+public class supermarket 
+{
+    
+    public static void main(String[] args) 
+    {
+        System.out.println("Welcome to ShopHub Management System!");
+        System.out.println("Here is a list of all the products availabel in our market management system");
+        List <String> productList=new ArrayList<>();
+        productList.add("1}Grocery Section(Eg-Cereals,Snacks and Chips etc)");
+        productList.add("2}Garments Section(Eg-Shirt,Jeans etc)");
+        productList.add("3}Personal Care and Health Products(Eg-Haircare Products,Dental Care,Hygiene Products etc)");
+        productList.add("4}Fresh Produce(Eg-Fruits,Vegetables, etc)");
+        productList.add("5}Beverages(Eg-Tea,Coffee,Juice etc)");
+        UserSelection obj = new UserSelection();
+        Byte customerCategorySelectedNumber = obj.messageForCustomerSelection();
+        Switch(customerCategorySelectedNumber)
+        {
+            case 1:
+            {
+                
+            }
+
+            case 2 :
+            {
+
+            }
+            case 3 :
+            {
+
+            }
+            case 4 :
+            {
+
+            }
+            case 5:
+            {
+
+            }
+        }
+    }
+}
